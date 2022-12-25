@@ -2,106 +2,127 @@
 
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     background-color: #6D466B;
     font-family: "Lora", serif;
     color: #EAD7D7;
     margin: 0;
-  }
-  
-  .container-main {
-    width: 65%;
-    margin: 0 auto;
-  }
-  
-  .profile {
+}
+
+.container-main {
+    margin: 0 16%;
+}
+
+.profile {
     text-align: center;
     margin-bottom: 50px;
-  }
-  
-  .foto-perfil {
+}
+
+.basic-info {
+    display: flex;
+}
+
+.basic-info p {
+    text-align: left;
+    width: 50%;
+}
+
+.contacts-list {
+    margin: 0 25px 0 50px;
+    padding: 25px;
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.foto-perfil {
     width: 250px;
-    border: 2px solid #ffffff; /* shorthand */
+    border: 2px solid #ffffff;
+    /* shorthand */
     border-radius: 50%;
-    margin: 15px 15px 0; /* espaçamento externo */
+    margin: 15px 15px 0;
+    /* espaçamento externo */
     /* padding: 5px; espaçamento interno */
     box-shadow: 2px 2px 5px #000000;
-  }
-  
-  p {
+}
+
+p {
     line-height: 20px;
     margin-top: 0;
     margin-bottom: 0;
-  }
-  
-  h1 {
+}
+
+h1 {
     margin-bottom: 0;
     margin-top: 10px;
     font-family: "Montserrat", sans-serif;
-  }
-  
-  h2 {
+}
+
+h2 {
     margin-top: 0;
     font-style: italic;
     color: #aaaaaa;
     font-weight: 200;
     letter-spacing: -1px;
     font-size: 25px;
-  }
-  
-  h3 {
+}
+
+h3 {
     color: #EAD7D7;
     /* font-weight: 200; */
-  }
-  
-  h4 {
+}
+
+h4 {
     margin-bottom: 0;
-  }
-  
-  h5 {
+}
+
+h5 {
     margin-top: 2px;
     margin-bottom: 5px;
     font-weight: 100;
     font-style: italic;
-  }
-  
-  strong {
+}
+
+strong {
     font-weight: 400;
-  }
-  
-  .social-links {
+}
+
+.social-links {
     text-decoration: none;
-  }
-  
-  .icons {
+}
+
+.icons {
     width: 10%;
     min-width: 40px;
     max-width: 50px;
     margin: 0 10px;
-  }
-  
-  .technologies-list {
+}
+
+.technologies-list {
     display: flex;
-  }
-  
-  .jobs-list {
+}
+
+.jobs-list {
     list-style: none;
     padding-left: 20px;
-  }
-  
-  /* TIMELINE */
-  
-  /* A TIMELINE (linha vertical) */
-  .timeline {
+}
+
+/* TIMELINE */
+
+/* A TIMELINE (linha vertical) */
+.timeline {
     position: relative;
     max-width: 1000px;
     margin: 0 16%;
-  }
-  
-  /* A TIMELINE (linha vertical) */
-  .timeline::after {
+}
+
+/* A TIMELINE (linha vertical) */
+.timeline::after {
     content: "";
     position: absolute;
     width: 6px;
@@ -110,20 +131,20 @@
     bottom: 0;
     left: 31px;
     margin-left: -3px;
-  }
-  
-  /* Container em volta do conteudo */
-  .timeline-container {
+}
+
+/* Container em volta do conteudo */
+.timeline-container {
     position: relative;
     background-color: inherit;
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
     margin-top: 10px;
-  }
-  
-  /* Os circulos na TIMELINE */
-  .timeline-container::after {
+}
+
+/* Os circulos na TIMELINE */
+.timeline-container::after {
     content: "";
     position: absolute;
     width: 25px;
@@ -134,15 +155,15 @@
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Coloca o container na esquerda */
-  .left {
+}
+
+/* Coloca o container na esquerda */
+.left {
     left: 0;
-  }
-  
-  /* Adiciona setas ao container esquerdo (apontando para a direita) */
-  .left::before {
+}
+
+/* Adiciona setas ao container esquerdo (apontando para a direita) */
+.left::before {
     left: 60px;
     content: " ";
     height: 0;
@@ -154,34 +175,34 @@
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-  }
-  
-  /* Fixa o circulo para containers no lado direito */
-  .left::after {
+}
+
+/* Fixa o circulo para containers no lado direito */
+.left::after {
     left: 15px;
-  }
-  
-  /* O CONTEUDO */
-  .timeline-content {
+}
+
+/* O CONTEUDO */
+.timeline-content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
-  }
-  
-  .timeline-titles {
+}
+
+.timeline-titles {
     color: #6D466B;
     margin: 0 0 5px 0;
-  }
-  
-  .timeline-content p {
+}
+
+.timeline-content p {
     color: #412234;
-  }
-  
-  .footer {
+}
+
+.footer {
     background-color: #412234;
     margin-top: 50px;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-  }
+}
