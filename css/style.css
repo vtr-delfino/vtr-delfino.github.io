@@ -1,0 +1,74 @@
+:root {
+    --font-mono: 'Ubuntu Mono', monospace;
+}
+
+* {
+    background-color: rgb(19, 19, 19);
+    box-sizing: border-box;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 10px;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    border-bottom: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    padding:10px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    border-bottom: 1px solid white;
+    transition: border-bottom 500ms ease;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.profile-header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-titles {
+    margin-right: 10%;
+    align-self: flex-end;
+}
+
+.name {
+    font-family: var(--font-mono);
+    font-size: 3.5em;
+    width: 100%;
+}
+
+.name-subtitle {
+    font-family: var(--font-mono);
+}
+
+.avatar {
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 250px;
+    /* margin: 20ppx; */
+    width: 250px;
+}
