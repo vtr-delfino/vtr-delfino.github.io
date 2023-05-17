@@ -1,0 +1,38 @@
+/* 
+    FONTS VARIANTS
+
+    Ubuntu Mono: Bold 700
+    Ubunto: Bold 700
+    Roboto Slab: Regular 400, Bold 700
+*/
+
+:root {
+    --font-mono: 'Ubuntu Mono', monospace;
+    --font-titles: 'Ubuntu', sans-serif;
+    --font-texts: 'Roboto Slab', sans-serif;
+}
+
+* {
+    background-color: rgb(19, 19, 19);
+    box-sizing: border-box;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--font-titles);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p {
+    font-family: var(--font-texts);
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+}

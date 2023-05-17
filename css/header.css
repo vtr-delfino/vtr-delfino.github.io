@@ -1,0 +1,23 @@
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 10px;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    border-bottom: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    padding:10px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    border-bottom: 1px solid white;
+    transition: border-bottom 500ms ease;
+}
