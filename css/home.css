@@ -17,21 +17,19 @@
     align-self: flex-end;
 }
 
-.introduction {
-    margin: 3% 0;
-}
-
 .name {
     animation: 
-        typing 3.5s steps(40, end),
+        typing 1750ms steps(16),
         blinker .5s step-end infinite alternate;
     border-right: 0.15em solid white;
+    display: inline-block;
     font-family: var(--font-mono);
     font-size: 3.5em;
+    letter-spacing: 2px;
     margin: 2.5% 0;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
+    width: auto;
 }
 
 .name-subtitle {
