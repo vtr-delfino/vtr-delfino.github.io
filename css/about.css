@@ -1,20 +1,62 @@
-.about {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
+.about-personal {
+    display: inline-block;
 }
 
 .about-personal,
-.about-professional {
-    display: flex;
+.about-professional > div {
+    margin: 2.5% 0;
+    width: 50%;
 }
 
-.about-personal > div,
-.about-professional > div {
-    width: 50%;
+.about-professional {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .about-professional > :last-child {
     text-align: right;
+}
+
+.about-stacks {
+    margin: 2.5% 0;
+}
+
+.about-stacks-container {
+    background:
+        linear-gradient(to right, #F27121 4px, transparent 4px) 0 0,
+        linear-gradient(to left, #8A2387 4px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom, #F27121 4px, transparent 4px) 0 0,
+        linear-gradient(to top, #8A2387 4px, transparent 4px) 100% 100%;
+    
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5% 0;
+    padding: 2.5%;
+    width: 100%;
+}
+
+.stack {
+    display: flex;
+}
+
+.stack-logo{
+    height: 55px;
+    margin-right: 5px;
+}
+
+.stack-title {
+    align-self: flex-end;
+    color: rgb(225, 225, 225);
+    font-family: var(--font-titles);
+    margin-right: 25px; 
+}
+
+.stack-level {
+    font-family: var(--font-texts);
+    font-size: 0.75em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
