@@ -33,7 +33,7 @@
     A fake / hidden checkbox is used as click reciever,
     so you can use the :checked selector on it.
     -->
-    <input type="checkbox" />
+    <input type="checkbox" id="hambMenuCheckbox"/>
 
     <!--
     Some spans to act as a hamburger.
@@ -50,9 +50,9 @@
     but hey, it's pure CSS magic.
     -->
     <ul id="menu">
-    <a href="#home"><li>Home</li></a>
-    <a href="#about"><li>Sobre</li></a>
-    <a href="#projects"><li>Projetos</li></a>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#projects">Projetos</a></li>
     </ul>
     </div>
     </nav>
@@ -241,5 +241,7 @@
         </section>
         
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

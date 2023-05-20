@@ -9,35 +9,12 @@
  * prefixes.
  */
 
-body
-{
-margin: 0;
-padding: 0;
-
-/* make it look decent enough */
-color: #cdcdcd;
-font-family: "Avenir Next", "Avenir", sans-serif;
-
-overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
-}
-/* 
-a
-{
-text-decoration: none;
-color: #232323;
-
-transition: color 0.3s ease;
-}
-
-a:hover
-{
-color: tomato;
-} */
 
 #menuToggle
 {
+    background-color: transparent;
 display: block;
-position: absolute;
+position: fixed;
 top: 50px;
 right: 50px;
 
@@ -49,6 +26,7 @@ user-select: none;
 
 #menuToggle input
 {
+    background-color: transparent;
 display: block;
 width: 40px;
 height: 32px;
@@ -75,7 +53,7 @@ height: 4px;
 margin-bottom: 5px;
 position: relative;
 
-background: #cdcdcd;
+background: rgb(228, 228, 228);
 border-radius: 3px;
 
 z-index: 1;
@@ -105,7 +83,7 @@ transform-origin: 0% 100%;
 {
 opacity: 1;
 transform: rotate(45deg) translate(-2px, -1px);
-background: #232323;
+background: rgb(228, 228, 228);
 }
 
 /*
@@ -132,14 +110,15 @@ transform: rotate(-45deg) translate(0, -1px);
 */
 #menu
 {
+    border-radius: 5px;
 position: absolute;
-width: 300px;
+width: 250px;
 margin: -100px 0 0 0;
-padding: 50px;
+padding: 50px 20px;
 padding-top: 125px;
-right: -100px;
+right: -125px;
 
-background: transparent;
+background: #1f1f1f;
 list-style-type: none;
 -webkit-font-smoothing: antialiased;
 /* to stop flickering of text in safari */
@@ -150,10 +129,23 @@ transform: translate(100%, 0);
 transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
+#menu a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
 #menu li
 {
-padding: 10px 0;
-font-size: 22px;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    padding: 10px 0;
+    font-size: 22px;
+    width: fit-content;
+}
+
+#menu li:hover {
+    border-bottom: 1px solid white;
+    transition: border-bottom 500ms ease;
 }
 
 /*
