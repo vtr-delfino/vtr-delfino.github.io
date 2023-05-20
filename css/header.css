@@ -1,23 +1,169 @@
-.menu ul{
+/*
+ * TOP MENU
+ */
+
+.menu-top ul{
     display: flex;
     justify-content: flex-end;
     list-style: none;
     padding: 10px;
 }
 
-.menu ul li {
-    margin: 0 10px;
+.menu-top ul li {
+    margin: 10px;
 }
 
-.menu ul li a {
+.menu-top ul li a {
     border-bottom: 1px solid transparent;
-    color: white;
     font-weight: bold;
     padding:10px;
     text-decoration: none;
 }
 
-.menu ul li a:hover {
+.menu-top ul li a:hover {
     border-bottom: 1px solid white;
     transition: border-bottom 500ms ease;
+}
+
+/*
+ * HAMBURGER MENU
+ *
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT license
+ */
+
+.menu-hamb-toggle {
+    -webkit-user-select: none;
+    background-color: transparent;
+    display: block;
+    opacity: 0;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    user-select: none;
+    z-index: 1;
+}
+
+#hambMenuCheckbox {
+    -webkit-touch-callout: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    left: -5px;
+    opacity: 0; /* hide this */
+    position: absolute;
+    top: -7px;
+    width: 40px;
+    z-index: 2; /* and place it over the hamburger */
+}
+
+/*
+* Just a quick hamburger
+*/
+.menu-hamb-toggle span {
+    background: rgb(228, 228, 228);
+    border-radius: 3px;
+    display: block;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    width: 33px;
+    z-index: 1;
+}
+
+.menu-hamb-toggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.menu-hamb-toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#hambMenuCheckbox:checked ~ span {
+    background: rgb(228, 228, 228);
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+
+/*
+* But let's hide the middle one.
+*/
+#hambMenuCheckbox:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+* Ohyeah and the last one should go the other direction
+*/
+#hambMenuCheckbox:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+.menu-hamb {
+    -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
+    background: #1f1f1f;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: -100px 0 0 0;
+    opacity: 0;
+    padding: 20px 20px;
+    padding-top: 125px;
+    position: absolute;
+    right: -125px;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    width: 250px;
+}
+
+.menu-hamb li {
+    background-color: transparent;
+    font-size: 22px;
+    margin: 5px 0;
+    width: fit-content;
+}
+
+.menu-hamb a {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.menu-hamb a:hover {
+    border-bottom: 1px solid white;
+    transition: border-bottom 500ms ease;
+}
+
+/*
+* And let's fade it in from the left
+*/
+#hambMenuCheckbox:checked ~ ul {
+    opacity: 1;
+    transform: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-hamb {
+        opacity: 0;
+        transform: none;
+        transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
 }

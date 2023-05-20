@@ -41,6 +41,14 @@ p {
     line-height: 1.5em;
 }
 
+a:hover {
+    -webkit-background-clip: text;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    color: transparent;
+    transition: 400ms;
+    background-color: transparent;
+}
+
 .container {
     margin: 0 auto;
     width: 85%;
@@ -49,12 +57,26 @@ p {
 .hide {
     opacity: 0;
     pointer-events: none;
-    right: -100%;
-    transition: all 150ms ease;
+    transition: all 250ms ease;
 }
 
 .show {
-    opacity: 1;
-    right: 50px;
-    transition: all 150ms ease; 
+    opacity: 1 !important;
+    transition: all 250ms ease; 
+}
+
+.get-to-top {
+    bottom: 50px;
+    height: 30px;
+    opacity: 0;
+    position: fixed;
+    right: 20px;
+    width: 30px;
+
+    /* ARROW */
+    border: solid rgb(225, 225, 225);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(-135deg);
 }
