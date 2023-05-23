@@ -9,8 +9,6 @@
 
 .projects-list {
     display: flex;
-    height: 100%;
-    width: 100%;
 }
 
 .project {
@@ -88,8 +86,14 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 1000px) {
     .projects-list {
+        align-items: center;
         flex-direction: column;
+    }
+
+    .project {
+        margin: 5px 0;
+        width: auto;
     }
 }
