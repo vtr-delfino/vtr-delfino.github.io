@@ -13,10 +13,6 @@
     width: 100%;
 }
 
-.projects-list .project{
-    margin: 0 25px;
-}
-
 .project {
     align-items: center;
     background:
@@ -29,22 +25,23 @@
     background-size: 50px 50px;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 75%;
     justify-content: center;
+    margin: 0 5px;
     padding: 15px;
-    width: 350px;
+    width: 30%;
 }
 
 .project-img-hover {
-    height: 75%;
     margin-bottom: 2%;
-    width: 75%;
+    width: 85%;
 }
 
 .project img {
     border-radius: 5px;
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    height: 100%;
+    min-height: 150px;
+    min-width: 150px;
     width: 100%;
 }
 
@@ -77,4 +74,22 @@
 .project p {
     text-align: center;
     margin: 0 5px;
+}
+
+@media (min-height: 600px) and (max-height: 800px) {
+    .project {
+        height: 50%;
+    }
+}
+
+@media (max-height: 600px) {
+    .project {
+        height: 60%;
+    }
+}
+
+@media (max-width: 420px) {
+    .projects-list {
+        flex-direction: column;
+    }
 }

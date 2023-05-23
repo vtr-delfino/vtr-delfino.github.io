@@ -60,3 +60,13 @@
     font-weight: 300;
     letter-spacing: 0.5px;
 }
+
+@media (max-width: 1050px) {
+    .about-stacks-container {
+        flex-wrap: wrap;
+    }
+
+    .stack {
+        margin: 10px 0;
+    }
+}
