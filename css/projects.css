@@ -73,27 +73,3 @@
     text-align: center;
     margin: 0 5px;
 }
-
-@media (min-height: 600px) and (max-height: 800px) {
-    .project {
-        height: 50%;
-    }
-}
-
-@media (max-height: 600px) {
-    .project {
-        height: 60%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .projects-list {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .project {
-        margin: 5px 0;
-        width: auto;
-    }
-}

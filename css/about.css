@@ -51,7 +51,6 @@
     align-self: flex-end;
     color: rgb(225, 225, 225);
     font-family: var(--font-titles);
-    margin-right: 25px; 
 }
 
 .stack-level {
@@ -60,14 +59,3 @@
     font-weight: 300;
     letter-spacing: 0.5px;
 }
-
-@media (max-width: 1050px) {
-    .about-stacks-container {
-        flex-wrap: wrap;
-    }
-
-    .stack {
-        margin: 10px 0;
-    }
-}
-
